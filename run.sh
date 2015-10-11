@@ -1,16 +1,10 @@
-# docker-taiga
+#!/bin/bash
 
-## How to use
+docker run -itd --name postgres -e POSTGRES_USER=taiga -e POSTGRES_PASSWORD=taiga postgres:9.3
 
-### Postgres
+echo -e "waiting for postgres start..."
+sleep 5
 
-You must run postgres docker before run docker taiga
-
-`docker run -itd --name postgres -e POSTGRES_USER=taiga -e POSTGRES_PASSWORD=taiga postgres:9.3`
-
-### Taiga backend and frontend
-
-```bash
 docker run -itd --name taiga --link postgres:postgres -p 80:80 \
             -e LOGIN=taiga\
             -e USER_UID=1000\
@@ -24,4 +18,4 @@ docker run -itd --name taiga --link postgres:postgres -p 80:80 \
             -e TAIGA_HOSTNAME=172.17.0.100\
             -e TAIGA_SAMPLE_DATA=1\
             astronaut1712/docker-taiga
-```
+docker logs -f taiga

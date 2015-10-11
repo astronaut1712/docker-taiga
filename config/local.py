@@ -50,9 +50,10 @@ DEFAULT_FROM_EMAIL = "no-reply@%s" % TAIGA_HOSTNAME
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 #SITE_ID = "api"
 
-MEDIA_ROOT = '/home/taiga/media'
-STATIC_ROOT = '/home/taiga/static'
+# MEDIA_ROOT = '/home/taiga/media'
+# STATIC_ROOT = '/home/taiga/static'
 
+INSTALLED_APPS += ["taiga_contrib_slack"]
 
 # EMAIL SETTINGS EXAMPLE
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

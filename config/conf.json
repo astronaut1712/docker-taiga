@@ -7,5 +7,5 @@
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
-    "contribPlugins": []
+    "contribPlugins": ["/js/slack.js"]
 }
