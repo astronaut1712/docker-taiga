@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t astronaut1712/taiga .
+docker build -t astronaut1712/docker-taiga .
