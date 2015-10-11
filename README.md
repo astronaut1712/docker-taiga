@@ -21,5 +21,5 @@ docker run -itd --name taiga --link postgres:postgres -p 80:80 \
             -e TAIGA_DB_HOST=postgres\
             -e TAIGA_DB_PORT=5432\
             -e TAIGA_HOSTNAME=172.17.0.100\
-            astronaut1712/taiga
+            astronaut1712/docker-taiga
 ```
