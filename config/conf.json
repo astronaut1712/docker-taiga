@@ -1,0 +1,11 @@
+{
+    "api": "http://localhost/api/v1/",
+    "eventsUrl": null,
+    "debug": "true",
+    "publicRegisterEnabled": true,
+    "feedbackEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null,
+    "contribPlugins": []
+}
