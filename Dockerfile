@@ -21,17 +21,6 @@ RUN set -x; \
 
 RUN apt-get install -y libpq-dev
 
-# RUN apt-get install -y \
-#         postgresql-9.3 postgresql-contrib-9.3 \
-#         postgresql-doc-9.3 postgresql-server-dev-9.3
-#
-# RUN /etc/init.d/postgresql start &&\
-#             sudo -u postgres psql --command "CREATE USER taiga WITH SUPERUSER PASSWORD 'taiga';" &&\
-#             sudo -u postgres createdb -O taiga taiga
-
-# RUN apt-get install -y libxml2-dev libxslt-dev \
-#                        python-dev python3-dev python-pip vim virtualenvwrapper supervisor nginx
-# RUN pip install pew==0.1.15
 # create user taiga
 RUN useradd -m -d /home/taiga -p taiga -s /bin/bash taiga
 RUN usermod -aG sudo taiga
